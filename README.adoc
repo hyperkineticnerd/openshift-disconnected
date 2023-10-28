@@ -10,6 +10,7 @@ platform, additional containers, Red Hat Operators, and Red Hat Certified Operat
 == Organization
 
 At the top-level directory, we have 3 important directories:
+
 * `cluster/`
 * `install/`
 * `mirror/`
