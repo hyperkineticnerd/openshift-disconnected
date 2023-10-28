@@ -10,8 +10,8 @@ mirror:
       packages:
         - name: gpu-operator-certified
           channels:
-            - name: "v23.6"
-              minVersion: "23.6.0"
+            - name: "v23.9"
+              minVersion: "23.9.0"
         - name: f5-bigip-ctlr-operator
           channels:
             - name: beta

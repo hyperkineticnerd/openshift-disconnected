@@ -41,7 +41,7 @@ apimatic-kubernetes-operator               APIMatic Operator                    
 application-services-metering-operator     Application Services Metering Operator                            alpha
 argocd-operator                            Argo CD                                                           alpha
 assisted-service-operator                  Infrastructure Operator for Red Hat OpenShift                     ocm-2.9
-authorino-operator                         Authorino Operator                                                alpha
+authorino-operator                         Authorino Operator                                                stable
 aws-efs-operator                           AWS EFS Operator                                                  stable
 awss3-operator-registry                    AWS S3 Operator                                                   alpha
 awx-operator                               AWX                                                               alpha
@@ -62,7 +62,7 @@ community-kubevirt-hyperconverged          KubeVirt HyperConverged Cluster Opera
 community-trivy-operator                   Community Trivy Operator                                          stable
 community-windows-machine-config-operator  Community Windows Machine Config Operator                         preview
 dapr-kubernetes-operator                   Dapr Control Plane Operator                                       alpha
-datadog-operator                           Datadog Operator                                                  stable
+datadog-operator                           Datadog Operator                                                  alpha
 datatrucker-operator                       DataTrucker.IO                                                    alpha
 dbaas-operator                             OpenShift Database Access Operator                                stable
 debezium-operator                          Debezium Operator                                                 debezium-latest
@@ -74,6 +74,7 @@ eclipse-amlen-operator                     eclipse-amlen-operator               
 eclipse-che                                Eclipse Che                                                       stable
 ecr-secret-operator                        ECR Secret Operator                                               v0.4
 edp-keycloak-operator                      EDP Keycloak Operator                                             alpha
+eginnovations-operator                     eG Innovations Universal Agent Operator                           beta
 egressip-ipam-operator                     Egressip Ipam Operator                                            alpha
 ember-csi-community-operator               Ember CSI Operator                                                beta
 etcd                                       etcd                                                              singlenamespace-alpha
@@ -86,7 +87,6 @@ flux                                       Flux                                 
 forklift-operator                          Forklift Operator                                                 stable-v2.5
 fossul-operator                            Fossul Operator                                                   alpha
 github-arc-operator                        github-arc-operator                                               alpha
-gitlab-operator-kubernetes                 GitLab                                                            stable
 gitops-primer                              gitops-primer                                                     alpha
 gitwebhook-operator                        GitWebhook operator                                               alpha
 global-load-balancer-operator              Global Load Balancer Operator                                     alpha
@@ -107,6 +107,7 @@ integrity-shield-operator                  K8s Integrity Shield                 
 ipfs-operator                              IPFS Operator                                                     alpha
 istio-workspace-operator                   Istio Workspace                                                   alpha
 jaeger                                     Community Jaeger Operator                                         stable
+k8gb                                       k8gb                                                              alpha
 kaoto-operator                             Kaoto Operator                                                    alpha
 keda                                       [DEPRECATED] KEDA                                                 alpha
 keepalived-operator                        Keepalived Operator                                               alpha
@@ -117,7 +118,7 @@ klusterlet                                 Klusterlet                           
 kogito-operator                            Kogito                                                            1.x
 koku-metrics-operator                      Koku Metrics Operator                                             beta
 konveyor-operator                          Konveyor Operator                                                 beta
-kuadrant-operator                          Kuadrant Operator                                                 alpha
+kuadrant-operator                          Kuadrant Operator                                                 stable
 kube-green                                 kube-green                                                        alpha
 kubecost                                   Kubecost                                                          alpha
 kubernetes-imagepuller-operator            Kubernetes Image Puller Operator                                  stable

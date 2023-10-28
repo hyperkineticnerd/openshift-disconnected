@@ -23,7 +23,7 @@ citrix-adc-istio-ingress-gateway-operator      Citrix ADC Istio Ingress Gateway 
 citrix-cpx-istio-sidecar-injector-operator     Citrix ADC CPX Istio Sidecar Injector Operator                        alpha
 citrix-cpx-with-ingress-controller-operator    Citrix ADC CPX with Ingress Controller                                stable
 citrix-ingress-controller-operator             Citrix Ingress Controller                                             stable
-cloud-native-postgresql                        EDB Postgres for Kubernetes                                           stable-v1.20
+cloud-native-postgresql                        EDB Postgres for Kubernetes                                           stable-v1.21
 cloudbees-ci                                   CloudBees CI                                                          alpha
 cloudcasa-operator                             CloudCasa                                                             alpha
 cnfv-operator                                  CloudNFV                                                              alpha
@@ -49,7 +49,7 @@ fujitsu-enterprise-postgres-operator           Fujitsu Enterprise Postgres Opera
 function-mesh                                  Function Mesh Operator                                                alpha
 gitlab-operator-kubernetes                     GitLab                                                                stable
 gitlab-runner-operator                         GitLab Runner                                                         stable
-gpu-operator-certified                         NVIDIA GPU Operator                                                   v23.6
+gpu-operator-certified                         NVIDIA GPU Operator                                                   v23.9
 habana-ai-operator                             Habana AI                                                             stable
 hazelcast-platform-operator                    Hazelcast Platform Operator                                           alpha
 hpe-csi-operator                               HPE CSI Operator for Kubernetes                                       stable

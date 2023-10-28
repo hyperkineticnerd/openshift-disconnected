@@ -42,7 +42,7 @@ application-services-metering-operator     Application Services Metering Operato
 aqua                                       Aqua Security Operator                                            2022.4.0
 argocd-operator                            Argo CD                                                           alpha
 assisted-service-operator                  Infrastructure Operator for Red Hat OpenShift                     ocm-2.9
-authorino-operator                         Authorino Operator                                                alpha
+authorino-operator                         Authorino Operator                                                stable
 aws-efs-operator                           AWS EFS Operator                                                  stable
 awss3-operator-registry                    AWS S3 Operator                                                   alpha
 awx-operator                               AWX                                                               alpha
@@ -64,7 +64,7 @@ community-kubevirt-hyperconverged          KubeVirt HyperConverged Cluster Opera
 community-trivy-operator                   Community Trivy Operator                                          stable
 community-windows-machine-config-operator  Community Windows Machine Config Operator                         preview
 dapr-kubernetes-operator                   Dapr Control Plane Operator                                       alpha
-datadog-operator                           Datadog Operator                                                  alpha
+datadog-operator                           Datadog Operator                                                  stable
 datatrucker-operator                       DataTrucker.IO                                                    alpha
 dbaas-operator                             OpenShift Database Access Operator                                stable
 debezium-operator                          Debezium Operator                                                 debezium-latest
@@ -113,6 +113,7 @@ integrity-shield-operator                  K8s Integrity Shield                 
 ipfs-operator                              IPFS Operator                                                     alpha
 istio-workspace-operator                   Istio Workspace                                                   alpha
 jaeger                                     Community Jaeger Operator                                         stable
+k8gb                                       k8gb                                                              alpha
 kaoto-operator                             Kaoto Operator                                                    alpha
 keda                                       [DEPRECATED] KEDA                                                 alpha
 keepalived-operator                        Keepalived Operator                                               alpha
@@ -123,7 +124,7 @@ klusterlet                                 Klusterlet                           
 kogito-operator                            Kogito                                                            1.x
 koku-metrics-operator                      Koku Metrics Operator                                             beta
 konveyor-operator                          Konveyor Operator                                                 beta
-kuadrant-operator                          Kuadrant Operator                                                 alpha
+kuadrant-operator                          Kuadrant Operator                                                 stable
 kube-green                                 kube-green                                                        alpha
 kubecost                                   Kubecost                                                          alpha
 kubernetes-imagepuller-operator            Kubernetes Image Puller Operator                                  stable
@@ -212,7 +213,7 @@ sosivio                                    Sosivio | Predictive Troubleshooting 
 sosreport-operator                         sosreport-operator                                                alpha
 spark-helm-operator                        Spark Helm Operator                                               alpha
 special-resource-operator                  Special Resource Operator                                         alpha
-stolostron                                 Stolostron                                                        community-0.1
+stolostron                                 Stolostron                                                        community-0.2
 stolostron-engine                          Stolostron Engine                                                 community-0.2
 strimzi-kafka-operator                     Strimzi                                                           stable
 syndesis                                   Syndesis Operator                                                 latest

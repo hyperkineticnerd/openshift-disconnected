@@ -20,7 +20,7 @@ citrix-adc-istio-ingress-gateway-operator    Citrix ADC Istio Ingress Gateway Op
 citrix-cpx-istio-sidecar-injector-operator   Citrix ADC CPX Istio Sidecar Injector Operator              alpha
 citrix-cpx-with-ingress-controller-operator  Citrix ADC CPX with Ingress Controller                      stable
 citrix-ingress-controller-operator           Citrix Ingress Controller                                   stable
-cloud-native-postgresql                      EDB Postgres for Kubernetes                                 stable-v1.20
+cloud-native-postgresql                      EDB Postgres for Kubernetes                                 stable-v1.21
 cloudbees-ci                                 CloudBees CI                                                alpha
 cnfv-operator                                CloudNFV                                                    alpha
 cockroachdb-certified                        CockroachDB Operator                                        stable
@@ -31,6 +31,7 @@ crunchy-postgres-operator                    Crunchy Postgres for Kubernetes    
 datadog-operator-certified                   Datadog Operator                                            stable
 dell-csm-operator-certified                  Dell Container Storage Modules                              stable
 dynatrace-operator                           Dynatrace Operator                                          alpha
+eginnovations-operator                       eG Innovations Universal Agent Operator                     beta
 elasticsearch-eck-operator-certified         Elasticsearch (ECK) Operator                                stable
 federatorai-certified                        Federator.ai                                                stable
 fep-ansible-operator                         FUJITSU Enterprise Postgres 12 Operator                     stable
@@ -38,7 +39,7 @@ fujitsu-enterprise-operator                  FUJITSU Enterprise Postgres 13 Oper
 fujitsu-enterprise-postgres-operator         Fujitsu Enterprise Postgres Operator                        stable
 function-mesh                                Function Mesh Operator                                      alpha
 gitlab-runner-operator                       GitLab Runner                                               stable
-gpu-operator-certified                       NVIDIA GPU Operator                                         v23.6
+gpu-operator-certified                       NVIDIA GPU Operator                                         v23.9
 habana-ai-operator                           Habana AI                                                   stable
 hazelcast-platform-operator                  Hazelcast Platform Operator                                 alpha
 hpe-ezmeral-csi-operator                     HPE Ezmeral Data Fabric CSI Operator for Kubernetes         stable
