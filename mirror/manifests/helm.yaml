@@ -1,0 +1,10 @@
+apiVersion: mirror.openshift.io/v1alpha2
+kind: ImageSetConfiguration
+storageConfig:
+  local:
+    path: ./metadata/platform/additional
+mirror:
+  additionalImages:
+    - name: registry.redhat.io/ubi8/ubi:latest
+    - name: quay.io/centos7/httpd-24-centos7:latest
+  helm: {}

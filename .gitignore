@@ -1,0 +1,12 @@
+.oc-mirror.log
+*.tar.gz
+openshift-install
+publish/.metadata.json
+cluster/hub
+install/*/hub
+mirror/helpers/pull-secrets/*.json
+mirror/helpers/pull-secrets/*.txt
+mirror/metadata
+mirror/operators
+mirror/platform
+

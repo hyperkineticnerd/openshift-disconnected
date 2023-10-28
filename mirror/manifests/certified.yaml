@@ -1,0 +1,18 @@
+apiVersion: mirror.openshift.io/v1alpha2
+kind: ImageSetConfiguration
+storageConfig:
+  local:
+    path: ./metadata/operators/certified
+mirror:
+  operators:
+    - catalog: registry.redhat.io/redhat/certified-operator-index:v4.12
+      full: false
+      packages:
+        - name: gpu-operator-certified
+          channels:
+            - name: "v23.6"
+              minVersion: "23.6.0"
+        - name: f5-bigip-ctlr-operator
+          channels:
+            - name: beta
+              minVersion: "1.14.0"

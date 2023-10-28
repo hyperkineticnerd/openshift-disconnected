@@ -1,0 +1,83 @@
+apiVersion: mirror.openshift.io/v1alpha2
+kind: ImageSetConfiguration
+storageConfig:
+  local:
+    path: ./metadata/operators/redhat
+mirror:
+  operators:
+    - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.12
+      full: false
+      packages:
+        - name: lvms-operator
+          channels:
+            - name: stable-4.12
+        - name: quay-operator
+          channels:
+            - name: stable-3.9
+              minVersion: "3.9.0"
+        - name: openshift-gitops-operator
+          channels:
+            - name: latest
+              maxVersion: "1.9.0"
+        - name: advanced-cluster-management
+          channels:
+            - name: release-2.8
+        - name: cincinnati-operator
+          channels:
+            - name: v1
+        - name: compliance-operator
+          channels:
+            - name: stable
+        - name: file-integrity-operator
+          channels:
+            - name: stable
+        - name: rhacs-operator
+          channels:
+            - name: stable
+        - name: jaeger-product
+          channels:
+            - name: stable
+        - name: kiali-ossm
+          channels:
+            - name: stable
+        - name: servicemeshoperator
+          channels:
+            - name: stable
+        - name: rhsso-operator
+          channels:
+            - name: stable
+        - name: openshift-cert-manager-operator
+          channels:
+            - name: stable-v1
+              minVersion: "1.11.4"
+        - name: devworkspace-operator
+          channels:
+            - name: fast
+              minVersion: "0.21.2"
+        - name: devspaces
+          channels:
+            - name: stable
+              minVersion: "3.7.1"
+        - name: container-security-operator
+          channels:
+            - name: stable-3.9
+              minVersion: "3.9.3"
+        - name: multicluster-engine
+          channels:
+            - name: stable-2.3
+              minVersion: "2.3.0"
+        - name: nfd
+          channels:
+            - name: stable
+              minVersion: "4.12.0-202307182142"
+        - name: ansible-automation-platform-operator
+          channels:
+            - name: stable-2.4-cluster-scoped
+          #    minVersion: 2.4.0-0.1693440031
+        - name: kubernetes-nmstate-operator
+          channels:
+            - name: stable
+        - name: kubevirt-hyperconverged
+          channels:
+            - name: stable
+
