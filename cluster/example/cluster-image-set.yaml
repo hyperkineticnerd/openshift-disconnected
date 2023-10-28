@@ -1,0 +1,7 @@
+apiVersion: hive.openshift.io/v1
+kind: ClusterImageSet
+metadata:
+  name: openshift-4.12.36
+spec:
+   releaseImage: quay.io/openshift-release-dev/ocp-release:4.12.36-x86_64
+

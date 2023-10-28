@@ -1,0 +1,36 @@
+  apiVersion: v1alpha1
+  kind: AgentConfig
+  metadata:
+    name: example
+  rendezvousIP: 192.168.4.12 
+  hosts:
+    - hostname: master-0
+      role: master
+      rootDeviceHints:
+        deviceName: /dev/sda
+      interfaces:
+        - name: eno1
+          macAddress: 00:00:00:00:00:01
+      networkConfig:
+        interfaces:
+          - name: eno1
+            type: ethernet
+            state: up
+            mac-address: 00:00:00:00:00:01 
+            ipv4:
+              enabled: true
+              dhcp: false
+              address:
+                - ip: 192.168.4.12
+                  prefix-length: 24 
+        dns-resolver:
+          config:
+            server:
+              - 8.8.8.8
+              - 1.1.1.1
+        routes:
+          config:
+            - destination: 0.0.0.0/0
+              next-hop-address: 192.168.4.1 
+              next-hop-interface: eno1
+              table-id: 254
