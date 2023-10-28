@@ -1,21 +1,15 @@
-.oc-mirror.log
-*.iso
-*.tar.gz
-.openshift_install.log
-.openshift_install_state.json
+cluster/**
 
-cluster/hub
+install/4.12/**
+install/**/*.tar.gz
+install/**/openshift-install
+install/**/*.iso
+install/**/.openshift_install.log
+install/**/.openshift_install_state.json
 
-install/4.12/*.tar.gz
-install/4.12/openshift-install
-install/4.12/*
-
-mirror/helpers/pull-secrets/*.json
-mirror/helpers/pull-secrets/*.txt
-mirror/metadata/operators/redhat/publish
-mirror/metadata/operators/certified/publish
-mirror/metadata/platform/openshift/publish
-mirror/operators/redhat
-mirror/operators/certified
-mirror/platform/openshift
-
+# mirror
+mirror/**/pull-secrets/*
+mirror/**/publish
+mirror/**/oc-mirror-workspace
+mirror/**/mirror_seq?_*.tar
+mirror/**/.oc-mirror.log
