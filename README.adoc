@@ -1,0 +1,29 @@
+= Disconnected OpenShift with oc-mirror and agent-based installer
+
+== Repository Purpose
+
+The primary purpose of this repository is provide organization of artifacts and
+manifests for a disconnected/air-gapped clusters. `oc-mirror` is used for 
+mirroring into a container registry, the included manifests mirrors the openshift
+platform, additional containers, Red Hat Operators, and Red Hat Certified Operators.
+
+== Organization
+
+At the top-level directory, we have 3 important directories:
+* `cluster/`
+* `install/`
+* `mirror/`
+
+`cluster/<cluster-name>` is used to store copies of the agent-based installer 
+manifests used to build clusters. `install/` is used to generate the resulting
+artifacts for the agent-based installer. We copy our manifests from 
+`cluster/<cluster-name>` into `install/<version>/<cluster-name>` and run 
+`openshift-install agent create image`. `mirror/` contains scripts and manifest
+for mirroring OpenShift platform artifacts and Operators. Within `mirror/`, we
+keep our mirroring manifests within `manifests/`, the `metadata/` we downloaded
+while mirroring the platform and operators, and store container archives within
+`platform/` and `operators/`. We keep each operator index and the platform
+separate from each other for many reasons; one of which is if there's a breaking
+change in an operator index, the error doesn't invalidate the other operator
+indexes and the platform download.
+
