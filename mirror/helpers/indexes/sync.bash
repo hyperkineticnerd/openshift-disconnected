@@ -1,5 +1,5 @@
 indexes="certified redhat community"
-versions="v4.12 v4.13"
+versions="v4.14 v4.16"
 
 for index in $indexes;do
     for version in $versions; do

@@ -7,8 +7,8 @@ mirror:
   platform:
     graph: true
     channels:
-      - name: stable-4.12
+      - name: stable-4.16
         type: ocp
         shortestPath: true
-        minVersion: 4.12.36
-        # maxVersion: 4.11.7
+        minVersion: 4.16.14
+        maxVersion: 4.16.15

@@ -1,0 +1,156 @@
+NAME                                         DISPLAY NAME                                                          DEFAULT CHANNEL
+abinitio-runtime-operator                    Co>Operating System Runtime Operator                                  release-4.3
+accuknox-operator-certified                  Accuknox Operator                                                     stable
+aci-containers-operator                      Cisco ACI Containers Operator                                         stable
+aikit-operator                               Intel® oneAPI AI Analytics Toolkit Operator                           alpha
+aiu-operator                                 AIU Operator                                                          stable-2.1
+ako-operator                                 AKO Operator                                                          stable
+alloy                                        Alloy                                                                 alpha
+anchore-engine                               Anchore Engine Operator                                               alpha
+anzo-operator                                Anzo Operator                                                         stable
+anzograph-operator                           AnzoGraph Operator                                                    stable
+anzounstructured-operator                    Anzo Unstructured Operator                                            stable
+appdynamics-cloud-operator                   Cisco AppDynamics Cloud Operator                                      alpha
+appdynamics-operator                         AppDynamics Operator for Kubernetes                                   alpha
+aqua-operator-certified                      Aqua Security Operator                                                2022.4
+cass-operator                                DataStax Kubernetes Operator for Apache Cassandra                     stable
+ccm-node-agent-dcap-operator                 CCM Node Agent DCAP Operator                                          alpha
+ccm-node-agent-operator                      CCM Node Agent Operator                                               alpha
+cilium                                       Cilium                                                                1.15
+cilium-enterprise                            Isovalent Enterprise for Cilium                                       1.15
+cloud-native-postgresql                      EDB Postgres for Kubernetes                                           stable-v1.24
+cloudbees-ci                                 CloudBees CI                                                          alpha
+cloudnative-pg                               CloudNativePG                                                         stable-v1
+cnfv-operator                                CloudNFV                                                              alpha
+cockroachdb-certified                        CockroachDB Operator                                                  stable
+confluent-for-kubernetes                     Confluent for Kubernetes                                              2.9
+conjur-follower-operator                     Conjur Enterprise Follower Operator                                   stable
+crunchy-postgres-operator                    Crunchy Postgres for Kubernetes                                       v5
+cte-k8s-operator                             CipherTrust Transparent Encryption for Kubernetes (CTE-K8s) Operator  stable
+datadog-operator-certified                   Datadog Operator                                                      stable
+dell-csm-operator-certified                  Dell Container Storage Modules                                        stable
+digitalai-deploy-operator                    Digital.ai Deploy                                                     stable
+digitalai-release-operator                   Digital.ai Release                                                    stable
+dynatrace-operator                           Dynatrace Operator                                                    alpha
+eginnovations-operator                       eG Innovations Universal Agent Operator                               beta
+elasticsearch-eck-operator-certified         Elasticsearch (ECK) Operator                                          stable
+f5-bigip-ctlr-operator                       F5 Container Ingress Services                                         stable
+f5-ipam-controller-operator                  F5 Ipam controller                                                    stable
+falcon-operator                              CrowdStrike Falcon Platform - Operator                                certified-1.0
+federatorai-certified                        Federator.ai                                                          stable
+fujitsu-enterprise-operator                  FUJITSU Enterprise Postgres 13 Operator                               stable-13
+fujitsu-enterprise-postgres-operator         Fujitsu Enterprise Postgres Operator                                  stable
+function-mesh                                Function Mesh Operator                                                alpha
+gaudi-ai-sw-tools-operator                   Intel® Gaudi AI SW Tools Operator                                     alpha
+gitlab-operator-kubernetes                   GitLab                                                                stable
+gitlab-runner-operator                       GitLab Runner                                                         stable
+gpu-operator-certified                       NVIDIA GPU Operator                                                   v24.6
+habana-ai-operator                           Intel Gaudi AI accelerator                                            stable
+hazelcast-platform-operator                  Hazelcast Platform Operator                                           alpha
+hpe-csi-operator                             HPE CSI Operator for Kubernetes                                       stable
+hpe-ezmeral-csi-operator                     HPE Ezmeral Data Fabric CSI Operator for Kubernetes                   stable
+hspc-operator                                Hitachi Storage Plug-in for Containers                                stable
+ibm-application-gateway-operator             IBM Application Gateway Operator                                      stable
+ibm-block-csi-operator                       IBM block storage CSI driver operator                                 stable
+ibm-data-reporter-operator                   IBM Data Reporter Operator                                            stable
+ibm-metrics-operator                         IBM Metrics Operator                                                  stable
+ibm-security-verify-access-operator          IBM Security Verify Access Operator                                   stable
+ibm-security-verify-directory-operator       IBM Security Verify Directory                                         stable
+ibm-security-verify-operator                 IBM Security Verify Operator                                          stable
+ibm-storage-odf-operator                     IBM Storage ODF operator                                              stable-v1.6
+infinibox-operator-certified                 InfiniBox CSI Driver - Operator                                       stable
+infoscale-dr-manager                         InfoScale™ DR Manager                                                 fast
+infoscale-licensing-operator                 InfoScale™ Licensing Operator                                         fast
+infoscale-operator                           InfoScale™ SDS Operator                                               stable
+infoscale-sds-operator                       InfoScale™ SDS Operator                                               fast
+infrastructure-asset-orchestrator-certified  Infrastructure Asset Orchestrator                                     stable
+instana-agent-operator                       Instana Agent Operator                                                stable
+intel-device-plugins-operator                Intel Device Plugins Operator                                         alpha
+intel-kubernetes-power-manager               Intel Kubernetes Power Manager                                        alpha
+iomesh-operator                              IOMesh Operator                                                       stable
+joget-dx-operator                            Joget DX Operator                                                     alpha
+joget-dx8-openshift-operator                 Joget DX 8 Operator                                                   alpha
+joget-dx8-operator                           Joget DX 8 Operator                                                   alpha
+k8s-triliovault                              Trilio for Kubernetes                                                 4.0.x
+keysight-ati-updates                         Keysight ATI Updates Operator                                         alpha
+keysight-kcos-framework                      Keysight KCOS Framework Operator                                      alpha
+keysight-kcos-ingress                        Keysight KCOS Ingress Operator                                        alpha
+keysight-kcos-licensing                      Keysight KCOS Licensing Operator                                      alpha
+keysight-kcos-sso                            Keysight KCOS SSO Operator                                            alpha
+keysight-keycloak-operator                   Keysight Keycloak Operator                                            alpha
+keysight-load-core                           Keysight LoadCore Operator                                            alpha
+keysight-loadcore-agents                     Keysight LoadCore Agents Operator                                     alpha
+keysight-nats-operator                       Keysight Nats Operator                                                alpha
+keysight-nimbusmosaic-dusim                  Keysight Nimbus Mosaic DUSim Operator                                 alpha
+keysight-rest-api-browser-v1                 Keysight Rest API Browser Operator v1                                 alpha
+keysight-wap-appsec                          Keysight WAP APPSEC Operator                                          alpha
+keysight-wap-core                            Keysight WAP Core Operator                                            alpha
+keysight-wap-db                              Keysight WAP DB Operator                                              alpha
+keysight-wap-diagnostics                     Keysight WAP Diagnostics Operator                                     alpha
+keysight-wap-logging                         Keysight WAP Logging Operator                                         alpha
+keysight-wap-migration                       Keysight WAP Migration Operator                                       alpha
+keysight-wap-msg-broker                      Keysight WAP Message Broker Operator                                  alpha
+keysight-wap-notifications                   Keysight WAP Notifications Operator                                   alpha
+keysight-wap-stats-dashboards                Keysight WAP Stats Dashboard Operator                                 alpha
+keysight-wap-storage                         Keysight WAP Storage Operator                                         alpha
+keysight-wap-test-core                       Keysight WAP Test Core Operator                                       alpha
+keysight-wap-ui                              Keysight WAP UI Operator                                              alpha
+keysight-websocket-service                   Keysight Websocket Operator                                           alpha
+kong-gateway-operator                        Kong                                                                  alpha
+kubearmor-operator-certified                 KubeArmor Operator                                                    stable
+kubecost-operator                            Kubecost                                                              alpha
+kubemq-operator-marketplace                  Kubemq Enterprise Operator                                            alpha
+kubeturbo-certified                          Kubeturbo Operator                                                    stable
+lenovo-locd-operator                         lenovo-locd-operator                                                  alpha
+marketplace-games-operator                   Arcade Operator                                                       alpha
+memcached-operator-ogaye                     memcached-operator-ogaye                                              alpha
+memory-machine-operator                      Memory Machine Operator                                               alpha
+minio-aistor-operator                        Minio Aistor Operator                                                 stable
+model-builder-for-vision-certified           IBM Model Builder for Vision                                          stable
+mongodb-atlas-kubernetes                     MongoDB Atlas Operator                                                stable
+mongodb-enterprise                           MongoDB Enterprise Operator                                           stable
+netapp-spark-operator                        NetApp Supported Apache Spark on OpenShift                            alpha
+netscaler-adm-agent-operator                 Netscaler ADM Agent Operator                                          stable
+netscaler-operator                           NetScaler Operator                                                    stable
+neuvector-certified-operator                 NeuVector Operator                                                    beta
+nexus-repository-ha-operator-certified       Nexus Repository HA Operator                                          stable
+nginx-ingress-operator                       Nginx Ingress Operator                                                alpha
+nutanixcsioperator                           Nutanix CSI Operator                                                  stable
+nvidia-network-operator                      NVIDIA Network Operator                                               v24.7.1
+nxiq-operator-certified                      Nexus IQ Operator                                                     stable
+nxrm-operator-certified                      Nexus Repository Operator                                             stable
+oceanbase-operator                           Ob Operator                                                           stable
+open-liberty-certified                       Open Liberty                                                          v1.4
+openshiftartifactoryha-operator              JFrog Artifactory Enterprise Operator                                 alpha
+openshiftxray-operator                       JFrog Xray Continuous Security Operator                               alpha
+operator-certification-operator              Operator Certification Operator                                       alpha
+ovms-operator                                OpenVINO Toolkit Operator                                             alpha
+pachyderm-operator                           Pachyderm                                                             stable
+pcc-operator                                 Prisma Cloud Compute Operator                                         stable
+percona-xtradb-cluster-operator-certified    Percona Operator for MySQL based on Percona XtraDB Cluster            stable-cw
+pmem-csi-operator-os                         Operator for PMEM-CSI driver                                          stable
+portworx-certified                           Portworx Enterprise                                                   stable
+prometurbo-certified                         Prometurbo Operator                                                   stable
+pubsubplus-eventbroker-operator              Solace PubSub+ Event Broker Operator                                  stable
+redis-enterprise-operator-cert               Redis Enterprise Operator                                             production
+runtime-component-operator-certified         Runtime Component                                                     v1.4
+runtime-fabric-operator                      Runtime Fabric Operator                                               stable
+sanstoragecsi-operator-bundle                NEC Storage M Series CSI Operator                                     stable
+scaleops-operator                            ScaleOps                                                              stable
+silicom-sts-operator                         Silicom STS Operator                                                  stable
+smilecdr-operator                            Smilecdr Operator                                                     alpha
+sriov-fec                                    SRIOV-FEC Operator for Intel vRAN Boost Accelerators                  stable
+stackable-commons-operator                   Stackable Commons Operator                                            stable
+stackable-zookeeper-operator                 Apache Zookeeper Operator                                             stable
+stackgres-certified                          StackGres                                                             stable
+t8c-certified                                Turbonomic Platform Operator                                          stable
+t8c-tsc-client-certified                     Turbonomic Secure Connect Client                                      stable
+tawon-operator                               Tawon                                                                 alpha
+tenant-operator                              Multi Tenant Operator                                                 release-0.12
+tigera-operator                              Tigera Operator                                                       release-v1.32
+timemachine-operator                         Time Machine Operator                                                 alpha
+vault-secrets-operator                       Vault Secrets Operator                                                stable
+vcp-operator                                 Venafi Control Plane Operator                                         stable
+webotx-operator                              WebOTX Operator for Kubernetes                                        stable
+xcrypt-operator                              Zettaset XCrypt Operator                                              alpha
+zabbix-operator-certified                    Zabbix Operator                                                       lts
