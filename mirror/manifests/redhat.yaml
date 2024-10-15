@@ -145,3 +145,6 @@ mirror:
 # windows-machine-config-operator               Windows Machine Config Operator                          stable
 # devspaces                                     Red Hat OpenShift Dev Spaces                             stable
 # devworkspace-operator                         DevWorkspace Operator                                    fast
+
+# machine-deletion-remediation                  Machine Deletion Remediation operator                    stable
+# node-healthcheck-operator                     Node Health Check Operator                               stable

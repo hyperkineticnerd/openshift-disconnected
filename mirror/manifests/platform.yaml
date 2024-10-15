@@ -11,4 +11,4 @@ mirror:
         type: ocp
         shortestPath: true
         minVersion: 4.16.14
-        maxVersion: 4.16.15
+        # maxVersion: 4.16.15

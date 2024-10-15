@@ -26,5 +26,3 @@ platform:
 fips: true 
 pullSecret: '{"auths":{"registry.example.com":{"auth":"","email":"username@example.com"}}}' 
 sshKey: 'ssh-rsa ... username@host' 
-
-
