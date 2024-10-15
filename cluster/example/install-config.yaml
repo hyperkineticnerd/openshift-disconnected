@@ -1,28 +1,76 @@
 apiVersion: v1
 baseDomain: example.com 
-compute: 
-- architecture: amd64
-  name: worker
-  replicas: 0 
-  hyperthreading: Enabled
-controlPlane: 
-  architecture: amd64
+credentialsMode: Mint 
+controlPlane:   
+  hyperthreading: Enabled 
   name: master
-  replicas: 1 
-  hyperthreading: Enabled
+  platform:
+    aws:
+      additionalSecurityGroupIDs:
+        - sg-1 
+        - sg-2
+      zones:
+      - us-iso-east-1a
+      - us-iso-east-1b
+      rootVolume:
+        iops: 4000
+        size: 500
+        type: io1 
+      metadataService:
+        authentication: Optional 
+      type: m6i.xlarge
+  replicas: 3
+compute: 
+- hyperthreading: Enabled 
+  name: worker
+  platform:
+    aws:
+      additionalSecurityGroupIDs:
+        - sg-3 
+        - sg-4
+      rootVolume:
+        iops: 2000
+        size: 500
+        type: io1 
+      metadataService:
+        authentication: Optional 
+      type: c5.4xlarge
+      zones:
+      - us-iso-east-1a
+      - us-iso-east-1b
+  replicas: 3
 metadata:
-  name: example 
+  name: test-cluster 
 networking:
   clusterNetwork:
-  - cidr: 10.128.0.0/14 
-    hostPrefix: 23 
+  - cidr: 10.128.0.0/14
+    hostPrefix: 23
   machineNetwork:
-  - cidr: 192.168.4.0/24
+  - cidr: 10.0.0.0/16
   networkType: OVNKubernetes 
-  serviceNetwork: 
+  serviceNetwork:
   - 172.30.0.0/16
 platform:
-  none: {} 
-fips: true 
-pullSecret: '{"auths":{"registry.example.com":{"auth":"","email":"username@example.com"}}}' 
-sshKey: 'ssh-rsa ... username@host' 
+  aws:
+    region: us-iso-east-1 
+    propagateUserTags: true 
+    userTags:
+      adminContact: jdoe
+      costCenter: 7536
+    subnets: 
+    - subnet-1
+    - subnet-2
+    - subnet-3
+    amiID: ami-96c6f8f7   
+    serviceEndpoints: 
+      - name: ec2
+        url: https://vpce-id.ec2.us-west-2.vpce.amazonaws.com
+    hostedZone: Z3URY6TWQ91KVV 
+fips: false 
+sshKey: ssh-ed25519 AAAA... 
+publish: Internal 
+pullSecret: '{"auths": ...}' 
+additionalTrustBundle: | 
+    -----BEGIN CERTIFICATE-----
+    <MY_TRUSTED_CA_CERT>
+    -----END CERTIFICATE-----
