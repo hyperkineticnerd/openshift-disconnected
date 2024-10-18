@@ -6,38 +6,40 @@ controlPlane:
   name: master
   platform:
     aws:
-      additionalSecurityGroupIDs:
-        - sg-1 
-        - sg-2
+      # additionalSecurityGroupIDs:
+      #   - sg-1 
+      #   - sg-2
       zones:
-      - us-iso-east-1a
-      - us-iso-east-1b
+      - us-isob-east-1a
+      - us-isob-east-1b
+      - us-isob-east-1c
       rootVolume:
         iops: 4000
         size: 500
         type: io1 
       metadataService:
         authentication: Optional 
-      type: m6i.xlarge
+      # type: m6i.xlarge
   replicas: 3
 compute: 
 - hyperthreading: Enabled 
   name: worker
   platform:
     aws:
-      additionalSecurityGroupIDs:
-        - sg-3 
-        - sg-4
+      # additionalSecurityGroupIDs:
+      #   - sg-3 
+      #   - sg-4
       rootVolume:
         iops: 2000
         size: 500
         type: io1 
       metadataService:
         authentication: Optional 
-      type: c5.4xlarge
+      # type: c5.4xlarge
       zones:
-      - us-iso-east-1a
-      - us-iso-east-1b
+      - us-isob-east-1a
+      - us-isob-east-1b
+      - us-isob-east-1c
   replicas: 3
 metadata:
   name: test-cluster 
@@ -46,26 +48,36 @@ networking:
   - cidr: 10.128.0.0/14
     hostPrefix: 23
   machineNetwork:
-  - cidr: 10.0.0.0/16
+  - cidr: 10.10.10.0/23
   networkType: OVNKubernetes 
   serviceNetwork:
   - 172.30.0.0/16
 platform:
   aws:
-    region: us-iso-east-1 
-    propagateUserTags: true 
-    userTags:
-      adminContact: jdoe
-      costCenter: 7536
+    region: us-isob-east-1 
+    # propagateUserTags: true 
+    # userTags:
+    #   adminContact: jdoe
+    #   costCenter: 7536
     subnets: 
     - subnet-1
     - subnet-2
     - subnet-3
     amiID: ami-96c6f8f7   
     serviceEndpoints: 
+      - name: tagging
+        url: https://tagging.us-east-1.amazonaws.com
+      - name: iam
+        url: https://iam.us-east-1.amazonaws.com
+      - name: route53
+        url: https://route53resolver.us-east-1.amazonaws.com
       - name: ec2
-        url: https://vpce-id.ec2.us-west-2.vpce.amazonaws.com
-    hostedZone: Z3URY6TWQ91KVV 
+        url: https://ec2.us-east-1.amazonaws.com
+      - name: s3
+        url: https://s3.us-east-1.amazonaws.com
+      - name: elasticloadbalancing
+        url: https://elasticloadbalancing.us-east-1.amazonaws.com
+    # hostedZone: Z3URY6TWQ91KVV 
 fips: false 
 sshKey: ssh-ed25519 AAAA... 
 publish: Internal 
