@@ -50,6 +50,28 @@ environment and run `helpers/scripts/push.bash` (after we edit it).
 
 === Cluster Installation
 
-Run our normal OpenShift Installation procedures. `cluster/example/<platform>/install-config.yaml` has our install config for our platform. 
+Run our normal OpenShift Installation procedures. 
+`cluster/example/<platform>/install-config.yaml` has our install config for our platform. 
 https://docs.openshift.com/container-platform/4.16/installing/installing_aws/ipi/installing-aws-default.html[Official Red Hat OpenShift Documentation - Installing in AWS]
 
+== Post-Installation
+
+Possible post-installation automation:
+
+=== GitOps
+
+Using the OpenShift GitOps operator, we can use manifest deployments written in Kustomize
+or Helm Charts to autodeploy our applications and services to the cluster.
+https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/[GitOps Declarative Setup]
+
+=== Helm Charts
+
+Second Best method is to having Helm Charts to deploy our resources. The Red Hat Communities of Practices on GitHub has some Helm Charts to automate deployment of Operators and other Services.
+
+=== Ansible
+
+We could also use Ansible Playbooks to deploy our Kubernetes manifests into OpenShift.
+
+=== Kubernetes Manifests
+
+Lastly, we could manually install operators and services into OpenShift, then save the manifests for later re-deployment. We could convert the our manifests (saved here) into any of the above methods.
