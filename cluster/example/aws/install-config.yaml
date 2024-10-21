@@ -6,40 +6,40 @@ controlPlane:
   name: master
   platform:
     aws:
-      # additionalSecurityGroupIDs:
-      #   - sg-1 
-      #   - sg-2
       zones:
       - us-isob-east-1a
       - us-isob-east-1b
       - us-isob-east-1c
-      rootVolume:
-        iops: 4000
-        size: 500
-        type: io1 
-      metadataService:
-        authentication: Optional 
-      # type: m6i.xlarge
+      type: m5.2xlarge
+      # additionalSecurityGroupIDs:
+      #   - sg-1 
+      #   - sg-2
+      # rootVolume:
+      #   iops: 4000
+      #   size: 500
+      #   type: io1 
+      # metadataService:
+      #   authentication: Optional 
   replicas: 3
 compute: 
 - hyperthreading: Enabled 
   name: worker
   platform:
     aws:
-      # additionalSecurityGroupIDs:
-      #   - sg-3 
-      #   - sg-4
-      rootVolume:
-        iops: 2000
-        size: 500
-        type: io1 
-      metadataService:
-        authentication: Optional 
-      # type: c5.4xlarge
       zones:
       - us-isob-east-1a
       - us-isob-east-1b
       - us-isob-east-1c
+      type: r5.2xlarge
+      # additionalSecurityGroupIDs:
+      #   - sg-3 
+      #   - sg-4
+      # rootVolume:
+      #   iops: 2000
+      #   size: 500
+      #   type: io1 
+      # metadataService:
+      #   authentication: Optional 
   replicas: 3
 metadata:
   name: test-cluster 
@@ -55,15 +55,11 @@ networking:
 platform:
   aws:
     region: us-isob-east-1 
-    # propagateUserTags: true 
-    # userTags:
-    #   adminContact: jdoe
-    #   costCenter: 7536
+    amiID: ami-96c6f8f7   
     subnets: 
     - subnet-1
     - subnet-2
     - subnet-3
-    amiID: ami-96c6f8f7   
     serviceEndpoints: 
       - name: tagging
         url: https://tagging.us-isob-east-1.amazonaws.com
@@ -78,7 +74,11 @@ platform:
       - name: elasticloadbalancing
         url: https://elasticloadbalancing.us-isob-east-1.amazonaws.com
     # hostedZone: Z3URY6TWQ91KVV 
-fips: false 
+    # propagateUserTags: true 
+    # userTags:
+    #   adminContact: jdoe
+    #   costCenter: 7536
+fips: true 
 sshKey: ssh-ed25519 AAAA... 
 publish: Internal 
 pullSecret: '{"auths": ...}' 
