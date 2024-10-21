@@ -6,11 +6,11 @@ controlPlane:
   name: master
   platform:
     aws:
+      type: m5.2xlarge
       zones:
       - us-isob-east-1a
       - us-isob-east-1b
       - us-isob-east-1c
-      type: m5.2xlarge
       # additionalSecurityGroupIDs:
       #   - sg-1 
       #   - sg-2
@@ -26,11 +26,11 @@ compute:
   name: worker
   platform:
     aws:
+      type: r5.2xlarge
       zones:
       - us-isob-east-1a
       - us-isob-east-1b
       - us-isob-east-1c
-      type: r5.2xlarge
       # additionalSecurityGroupIDs:
       #   - sg-3 
       #   - sg-4
