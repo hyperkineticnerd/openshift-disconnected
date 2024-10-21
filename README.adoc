@@ -95,3 +95,7 @@ https://docs.ansible.com/ansible/latest/collections/kubernetes/core/k8s_module.h
 Lastly, we could manually install operators and services into OpenShift, then save the 
 manifests for later re-deployment. We could convert the our manifests (saved here) into
 any of the above methods.
+
+== Additional Resources
+
+https://github.com/hyperkineticnerd/iac-aws[Automation for building a Private/Internal AWS VPC]
