@@ -1,4 +1,4 @@
-= Disconnected OpenShift with oc-mirror and agent-based installer
+= Disconnected OpenShift with `oc-mirror` and `openshift-install`
 
 == Repository Purpose
 
@@ -32,7 +32,7 @@ indexes and the platform download.
 
 === Download OpenShift Binaries
 
-Run `./install/download.bash` to download `oc`, `oc-mirror`, and `openshift-installer`.
+Run `./install/download.bash` to download `oc`, `oc-mirror`, and `openshift-install`.
 Extract each `tar.gz` and place the binaries into `/usr/local/sbin`
 (to lock the commands to the root user).
 The script will also download the AWS VMDK so we can create our own custom AMI.
@@ -49,4 +49,6 @@ environment and run `helpers/scripts/push.bash` (after we edit it).
 
 === Cluster Installation
 
-Run our normal OpenShift Installation procedures. `cluster/example/<platform>/install-config.yaml` has our install config for our platform.
+Run our normal OpenShift Installation procedures. `cluster/example/<platform>/install-config.yaml` has our install config for our platform. 
+https://docs.openshift.com/container-platform/4.16/installing/installing_aws/ipi/installing-aws-default.html[Official Red Hat OpenShift Documentation - Installing in AWS]
+
