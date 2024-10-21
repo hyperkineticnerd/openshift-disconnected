@@ -71,6 +71,8 @@ Second Best method is to having Helm Charts to deploy our resources. The Red Hat
 === Ansible
 
 We could also use Ansible Playbooks to deploy our Kubernetes manifests into OpenShift.
+https://docs.ansible.com/ansible/latest/collections/kubernetes/core/docsite/kubernetes_scenarios/k8s_intro.html[Introduction to Ansible for Kubernetes]
+https://docs.ansible.com/ansible/latest/collections/kubernetes/core/k8s_module.html#ansible-collections-kubernetes-core-k8s-module[kubernetes.core.k8s Ansible Module]
 
 === Kubernetes Manifests
 
