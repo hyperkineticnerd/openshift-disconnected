@@ -36,7 +36,7 @@ Run `./install/download.bash` to download `oc`, `oc-mirror`, and `openshift-inst
 Extract each `tar.gz` and place the binaries into `/usr/local/sbin`
 (to lock the commands to the root user).
 The script will also download the AWS VMDK so we can create our own custom AMI.
-https://docs.openshift.com/container-platform/4.16/installing/installing_aws/ipi/installing-aws-secret-region.html#installation-aws-upload-custom-rhcos-ami_installing-aws-secret-region[Uploading a custom RHCOS AMI in AWS]
+https://docs.openshift.com/container-platform/4.16/installing/installing_aws/ipi/installing-aws-secret-region.html#installation-aws-upload-custom-rhcos-ami_installing-aws-secret-region[Official Red Hat OpenShift Documentation - Uploading a custom RHCOS AMI in AWS]
 
 === Mirror Artifacts
 
@@ -66,7 +66,8 @@ https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/[GitO
 
 === Helm Charts
 
-Second Best method is to having Helm Charts to deploy our resources. The Red Hat Communities of Practices on GitHub has some Helm Charts to automate deployment of Operators and other Services.
+Second Best method is to having Helm Charts to deploy our resources. The Red Hat Communities of
+Practices on GitHub has some Helm Charts to automate deployment of Operators and other Services.
 
 === Ansible
 
@@ -76,4 +77,6 @@ https://docs.ansible.com/ansible/latest/collections/kubernetes/core/k8s_module.h
 
 === Kubernetes Manifests
 
-Lastly, we could manually install operators and services into OpenShift, then save the manifests for later re-deployment. We could convert the our manifests (saved here) into any of the above methods.
+Lastly, we could manually install operators and services into OpenShift, then save the 
+manifests for later re-deployment. We could convert the our manifests (saved here) into
+any of the above methods.
