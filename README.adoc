@@ -28,3 +28,25 @@ separate from each other for many reasons; one of which is if there's a breaking
 change in an operator index, the error doesn't invalidate the other operator
 indexes and the platform download.
 
+== Instructions
+
+=== Download OpenShift Binaries
+
+Run `./install/download.bash` to download `oc`, `oc-mirror`, and `openshift-installer`.
+Extract each `tar.gz` and place the binaries into `/usr/local/sbin`
+(to lock the commands to the root user).
+The script will also download the AWS VMDK so we can create our own custom AMI.
+
+=== Mirror Artifacts
+
+Change directory into `mirror`.
+Edit `manifests/platform.yaml` for our openshift release.
+Edit `helpers/scripts/mirror.bash` to only download the OpenShift platform artifacts.
+Execute `helpers/scripts/mirror.bash` to mirror the platform artifacts.
+
+If we are working in an Air-gapped environment, we'll have to sneaker-net to the
+environment and run `helpers/scripts/push.bash` (after we edit it).
+
+=== Cluster Installation
+
+Run our normal OpenShift Installation procedures. `cluster/example/<platform>/install-config.yaml` has our install config for our platform.
