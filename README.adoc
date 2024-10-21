@@ -40,13 +40,28 @@ https://docs.openshift.com/container-platform/4.16/installing/installing_aws/ipi
 
 === Mirror Artifacts
 
+The helper scripts are written to automate downloading and pushing the OpenShift platform
+and 3 of the 4 operator indexes found in an Online/Connected OpenShift Cluster.
+
 Change directory into `mirror`.
+
+==== OpenShift Artifacts
+
 Edit `manifests/platform.yaml` for our openshift release.
 Edit `helpers/scripts/mirror.bash` to only download the OpenShift platform artifacts.
 Execute `helpers/scripts/mirror.bash` to mirror the platform artifacts.
 
-If we are working in an Air-gapped environment, we'll have to sneaker-net to the
-environment and run `helpers/scripts/push.bash` (after we edit it).
+==== Red Hat Operators Index
+
+Edit `manifests/platform.yaml` for our chosen operators. In `helpers/indexes/redhat-v4.16.txt`,
+the full list of operators can be found. We only download the operators we want/need.
+Edit `helpers/scripts/mirror.bash` to only download the Red Hat operator artifacts.
+Execute `helpers/scripts/mirror.bash` to mirror the operators.
+
+==== Air-Gapped Transfer
+
+If we are working in an Air-gapped environment, we'll have to sneaker-net all the downloaded
+artifacts to the disconnected environment and run `helpers/scripts/push.bash` (after we edit it).
 
 === Cluster Installation
 
