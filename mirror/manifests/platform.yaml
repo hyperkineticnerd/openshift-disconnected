@@ -11,5 +11,5 @@ mirror:
       - name: stable-4.16
         type: ocp
         shortestPath: true
-        minVersion: 4.16.14
-        # maxVersion: 4.16.15
+        minVersion: 4.15.34
+        # maxVersion: 4.16.14

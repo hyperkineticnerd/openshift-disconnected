@@ -3,10 +3,10 @@
 declare CHANNEL='stable-4.16'
 
 # OpenShift Version (X.Y)
-declare VERSION='4.16'
+declare VERSION='4.15'
 
 # OpenShift Release Version (X.Y.Z)
-declare RELEASE=${1:-4.16.14}
+declare RELEASE=${1:-4.15.34}
 
 # OS for binaries, possible values: linux, mac, windows
 declare OS=${2:-linux}
@@ -24,7 +24,7 @@ declare MREGVER='1.3.11'
 declare ROSAVER='1.2.46'
 
 # Red Hat CoreOS Version for OpenShift Release, must be highest (X.Y.Z) but still equal or lesser than the OpenShift Release Version
-declare RHCOSVER='4.17.0'
+declare RHCOSVER='4.15.23'
 
 # OpenShift Installer Binaries
 curl -OL https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${RELEASE}/openshift-install-${OS}-${RELEASE}.tar.gz
