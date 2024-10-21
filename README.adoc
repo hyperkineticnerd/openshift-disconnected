@@ -36,6 +36,7 @@ Run `./install/download.bash` to download `oc`, `oc-mirror`, and `openshift-inst
 Extract each `tar.gz` and place the binaries into `/usr/local/sbin`
 (to lock the commands to the root user).
 The script will also download the AWS VMDK so we can create our own custom AMI.
+https://docs.openshift.com/container-platform/4.16/installing/installing_aws/ipi/installing-aws-secret-region.html#installation-aws-upload-custom-rhcos-ami_installing-aws-secret-region[Uploading a custom RHCOS AMI in AWS]
 
 === Mirror Artifacts
 
