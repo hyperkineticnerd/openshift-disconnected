@@ -53,7 +53,7 @@ Execute `helpers/scripts/mirror.bash` to mirror the platform artifacts.
 
 ==== Red Hat Operators Index
 
-Edit `manifests/platform.yaml` for our chosen operators. In `helpers/indexes/redhat-v4.16.txt`,
+Edit `manifests/redhat.yaml` for our chosen operators. In `helpers/indexes/redhat-v4.16.txt`,
 the full list of operators can be found. We only download the operators we want/need.
 Edit `helpers/scripts/mirror.bash` to only download the Red Hat operator artifacts.
 Execute `helpers/scripts/mirror.bash` to mirror the operators.
