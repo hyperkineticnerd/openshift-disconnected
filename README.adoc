@@ -99,3 +99,5 @@ any of the above methods.
 == Additional Resources
 
 https://github.com/hyperkineticnerd/iac-aws[Automation for building a Private/Internal AWS VPC]
+https://docs.openshift.com/container-platform/4.16/operators/understanding/olm-rh-catalogs.html#olm-rh-catalogs[Red Hat-provided Operator catalogs]
+
