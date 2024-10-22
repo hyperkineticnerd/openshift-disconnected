@@ -1,6 +1,11 @@
 cluster/**
 
 install/4.12/**
+install/4.13/**
+install/4.14/**
+install/4.15/**
+install/4.16/**
+install/4.17/**
 install/**/*.tar.gz
 install/**/openshift-install
 install/**/*.iso
