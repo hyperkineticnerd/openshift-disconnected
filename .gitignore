@@ -13,3 +13,9 @@ mirror/**/publish
 mirror/**/oc-mirror-workspace
 mirror/**/mirror_seq?_*.tar
 mirror/**/.oc-mirror.log
+
+mirror/metadata/**
+mirror/platform/ocp/**
+mirror/operators/redhat/**
+mirror/operators/community/**
+mirror/operators/certified/**
