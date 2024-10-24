@@ -67,7 +67,8 @@ artifacts to the disconnected environment and run `helpers/scripts/push.bash` (a
 
 Run our normal OpenShift Installation procedures. 
 `cluster/example/<platform>/install-config.yaml` has our install config for our platform. 
-https://docs.openshift.com/container-platform/4.16/installing/installing_aws/ipi/installing-aws-default.html[Official Red Hat OpenShift Documentation - Installing in AWS]
+
+* https://docs.openshift.com/container-platform/4.16/installing/installing_aws/ipi/installing-aws-default.html[Official Red Hat OpenShift Documentation - Installing in AWS]
 
 == Post-Installation
 
@@ -84,11 +85,14 @@ https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/[GitO
 Second Best method is to having Helm Charts to deploy our resources. The Red Hat Communities of
 Practices on GitHub has some Helm Charts to automate deployment of Operators and other Services.
 
+* https://github.com/redhat-cop[Red Hat Communities of Practices]
+
 === Ansible
 
 We could also use Ansible Playbooks to deploy our Kubernetes manifests into OpenShift.
-https://docs.ansible.com/ansible/latest/collections/kubernetes/core/docsite/kubernetes_scenarios/k8s_intro.html[Introduction to Ansible for Kubernetes]
-https://docs.ansible.com/ansible/latest/collections/kubernetes/core/k8s_module.html#ansible-collections-kubernetes-core-k8s-module[kubernetes.core.k8s Ansible Module]
+
+* https://docs.ansible.com/ansible/latest/collections/kubernetes/core/docsite/kubernetes_scenarios/k8s_intro.html[Introduction to Ansible for Kubernetes]
+* https://docs.ansible.com/ansible/latest/collections/kubernetes/core/k8s_module.html#ansible-collections-kubernetes-core-k8s-module[kubernetes.core.k8s Ansible Module]
 
 === Kubernetes Manifests
 
