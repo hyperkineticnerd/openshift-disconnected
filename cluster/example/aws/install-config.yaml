@@ -62,17 +62,17 @@ platform:
     - subnet-3
     serviceEndpoints: 
       - name: tagging
-        url: https://tagging.us-isob-east-1.amazonaws.com
+        url: https://tagging.us-isob-east-1.sc2s.sgov.gov
       - name: iam
-        url: https://iam.us-isob-east-1.amazonaws.com
+        url: https://iam.us-isob-east-1.sc2s.sgov.gov
       - name: route53
-        url: https://route53resolver.us-isob-east-1.amazonaws.com
+        url: https://route53resolver.us-isob-east-1.sc2s.sgov.gov
       - name: ec2
-        url: https://ec2.us-isob-east-1.amazonaws.com
+        url: https://ec2.us-isob-east-1.sc2s.sgov.gov
       - name: s3
-        url: https://s3.us-isob-east-1.amazonaws.com
+        url: https://s3.us-isob-east-1.sc2s.sgov.gov
       - name: elasticloadbalancing
-        url: https://elasticloadbalancing.us-isob-east-1.amazonaws.com
+        url: https://elasticloadbalancing.us-isob-east-1.sc2s.sgov.gov
     # hostedZone: Z3URY6TWQ91KVV 
     # propagateUserTags: true 
     # userTags:
