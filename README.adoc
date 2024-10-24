@@ -78,7 +78,8 @@ Possible post-installation automation:
 
 Using the OpenShift GitOps operator, we can use manifest deployments written in Kustomize
 or Helm Charts to autodeploy our applications and services to the cluster.
-https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/[GitOps Declarative Setup]
+
+* https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/[GitOps Declarative Setup]
 
 === Helm Charts
 
