@@ -24,3 +24,5 @@ mirror/platform/ocp/**
 mirror/operators/redhat/**
 mirror/operators/community/**
 mirror/operators/certified/**
+
+**/*.gz
