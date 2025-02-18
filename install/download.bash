@@ -1,12 +1,12 @@
 #!/bin/bash
 
-declare CHANNEL='stable-4.16'
+declare CHANNEL='stable-4.17'
 
 # OpenShift Version (X.Y)
-declare VERSION='4.15'
+declare VERSION='4.17'
 
 # OpenShift Release Version (X.Y.Z)
-declare RELEASE=${1:-4.15.34}
+declare RELEASE=${1:-4.17.8}
 
 # OS for binaries, possible values: linux, mac, windows
 declare OS=${2:-linux}
@@ -24,7 +24,7 @@ declare MREGVER='1.3.11'
 declare ROSAVER='1.2.46'
 
 # Red Hat CoreOS Version for OpenShift Release, must be highest (X.Y.Z) but still equal or lesser than the OpenShift Release Version
-declare RHCOSVER='4.15.23'
+declare RHCOSVER='4.17.0'
 
 # OpenShift Installer Binaries
 curl -OL https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${RELEASE}/openshift-install-${OS}-${RELEASE}.tar.gz
@@ -34,11 +34,15 @@ curl -OL https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${RELEASE}/op
 curl -OL https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${RELEASE}/openshift-client-${OS}-${CPU}-${VARIANT}-${RELEASE}.tar.gz
 curl -OL https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${RELEASE}/ccoctl-${OS}-${VARIANT}-${RELEASE}.tar.gz
 curl -OL https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${RELEASE}/opm-${OS}-${RELEASE}.tar.gz
-curl -OL https://mirror.openshift.com/pub/openshift-v4/clients/rosa/${ROSAVER}/rosa-${OS}.tar.bz
 
 # Disconnected Container Registry Binaries
 curl -OL https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${RELEASE}/oc-mirror.${VARIANT}.tar.gz
-curl -OL https://mirror.openshift.com/pub/openshift-v4/clients/mirror-registry/${MREGVER}/mirror-registry.tar.gz
+
+# Disconnected Container Registry Hosting Binaries
+#curl -OL https://mirror.openshift.com/pub/openshift-v4/clients/mirror-registry/${MREGVER}/mirror-registry.tar.gz
+
+# AWS Client Binaries
+#curl -OL https://mirror.openshift.com/pub/openshift-v4/clients/rosa/${ROSAVER}/rosa-${OS}.tar.bz
 
 # AWS AMI Base Image
-curl -OL https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/${VERSION}/${RHCOSVER}/rhcos-${RHCOSVER}-x86_64-aws.x86_64.vmdk.gz
+#curl -OL https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/${VERSION}/${RHCOSVER}/rhcos-${RHCOSVER}-x86_64-aws.x86_64.vmdk.gz

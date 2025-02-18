@@ -1,0 +1,15 @@
+apiVersion: mirror.openshift.io/v2alpha1
+kind: ImageSetConfiguration
+archiveSize: 2
+# storageConfig:
+#   local:
+#     path: ./metadata/platform/openshift
+mirror:
+  platform:
+    graph: false
+    channels:
+      - name: stable-4.17
+        type: ocp
+        # minVersion: 4.15.34
+        # maxVersion: 4.16.14
+        # shortestPath: true

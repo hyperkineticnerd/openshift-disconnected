@@ -1,0 +1,169 @@
+apiVersion: mirror.openshift.io/v2alpha1
+kind: ImageSetConfiguration
+archiveSize: 2
+# storageConfig:
+#   local:
+#     path: ./metadata/operators/redhat
+mirror:
+  operators:
+    - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.17
+      full: false
+      packages:
+        # AAP
+        - name: ansible-automation-platform-operator
+          channels:
+            - name: stable-2.5-cluster-scoped
+
+        # ACM
+        - name: advanced-cluster-management
+          channels:
+            - name: release-2.11
+        - name: multicluster-engine
+          channels:
+            - name: stable-2.6
+
+        # ACS
+        - name: rhacs-operator
+          channels:
+            - name: stable
+        - name: compliance-operator
+          channels:
+            - name: stable
+        - name: file-integrity-operator
+          channels:
+            - name: stable
+        - name: container-security-operator 
+          channels:
+            - name: stable-3.12
+
+        # AMQ Streams (Kafka)
+        - name: amq-streams
+          channels:
+            - name: stable
+
+        # AWS EFS CSI
+        - name: aws-efs-csi-driver-operator
+          channels:
+            - name: stable
+
+        # AWS Load Balancer
+        - name: aws-load-balancer-operator
+          channels:
+            - name: stable-v1
+
+        # Cincinnati
+        - name: cincinnati-operator
+          channels:
+            - name: v1
+
+        # Cluster Logging
+        - name: cluster-logging
+          channels:
+            - name: stable-6.0
+
+        # Cluster Monitoring
+        - name: loki-operator
+          channels:
+            - name: stable-6.0
+
+        # Cost Management
+        - name: costmanagement-metrics-operator
+          channels:
+            - name: stable
+
+        # LVM
+        - name: lvms-operator
+          channels:
+            - name: stable-4.17
+
+        # OpenShift Data Foundations
+        - name: odf-operator
+          channels:
+            - name: stable-4.17
+              # minVersion: 4.16.2-rhodf
+        - name: local-storage-operator
+          channels:
+            - name: stable
+        # - name: odf-csi-addons-operator
+        #   channels:
+        #     - name: stable-4.16
+        # - name: odf-prometheus-operator
+        #   channels:
+        #     - name: stable-4.16
+        # - name: odr-cluster-operator
+        #   channels:
+        #     - name: stable-4.16
+        # - name: redhat-oadp-operator
+        #   channels:
+        #     - name: stable-1.4
+
+        # OpenShift GitOps (ArgoCD)
+        - name: openshift-gitops-operator
+          channels:
+            - name: latest
+
+        # OpenShift Pipelines (Tekton)
+        - name: openshift-pipelines-operator-rh
+          channels:
+            - name: latest
+
+        # OpenShift Service Mesh
+        - name: jaeger-product
+          channels:
+            - name: stable
+        - name: kiali-ossm
+          channels:
+            - name: stable
+        - name: servicemeshoperator
+          channels:
+            - name: stable
+
+        # OpenShift Virt
+        - name: kubevirt-hyperconverged
+          channels:
+            - name: stable
+
+        # NMState
+        - name: kubernetes-nmstate-operator
+          channels:
+            - name: stable
+
+        # Red Hat Build of Keycloak
+        - name: rhbk-operator
+          channels:
+            - name: stable-v24
+
+        # Red Hat Build of Camel
+        - name: red-hat-camel-k
+          channels:
+            - name: 1.10.x
+
+        # ExternalDNS Operator
+        - name: external-dns-operator
+          channels:
+            - name: stable-v1
+
+        # MetalLB Operator
+        - name: metallb-operator
+          channels:
+            - name: stable
+
+        # cert-manager Operator for Red Hat OpenShift
+        - name: openshift-cert-manager-operator
+          channels:
+            - name: stable-v1
+
+
+# external-dns-operator                         ExternalDNS Operator                                     stable-v1
+# metallb-operator                              MetalLB Operator                                         stable
+# openshift-cert-manager-operator               cert-manager Operator for Red Hat OpenShift              stable-v1
+
+# sandboxed-containers-operator                 OpenShift sandboxed containers Operator                  stable
+# web-terminal                                  Web Terminal                                             fast
+# windows-machine-config-operator               Windows Machine Config Operator                          stable
+
+# devspaces                                     Red Hat OpenShift Dev Spaces                             stable
+# devworkspace-operator                         DevWorkspace Operator                                    fast
+
+# machine-deletion-remediation                  Machine Deletion Remediation operator                    stable
+# node-healthcheck-operator                     Node Health Check Operator                               stable
